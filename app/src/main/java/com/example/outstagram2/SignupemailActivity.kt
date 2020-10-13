@@ -29,6 +29,7 @@ class SignupemailActivity : AppCompatActivity() {
                     //btn_next_mail.layout(R.drawable.button_colorchange2)
                     //btn_next_mail.setBackgroundColor(R.drawable.button_colorchange2)
 
+
                 }
             }
 
