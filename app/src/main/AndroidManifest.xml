@@ -36,7 +36,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity">
-            <intent-filter> // 실행 액티비티 설정
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />

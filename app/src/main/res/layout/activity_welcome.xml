@@ -39,7 +39,7 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
-        android:background="@drawable/button_colorchange"
+        android:background="@drawable/button_colorchange2"
         android:text="가입 완료하기"
         android:textColor="#FFFFFF"
         android:textStyle="bold"

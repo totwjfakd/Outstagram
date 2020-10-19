@@ -8,12 +8,15 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.widget.Toast
 import androidx.core.content.ContextCompat
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_signupemail.*
 
 class SignupemailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signupemail)
+
+        btn_next_mail.setEnabled(false)
         et_user_name.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) { // 입력이 끝날때 실행되는 함수
                 if (et_user_name.text.toString() == "") {
@@ -28,7 +31,6 @@ class SignupemailActivity : AppCompatActivity() {
                     //btn_next_mail.setBackground(ContextCompat.getDrawable(this, R.drawable.button_colorchange2))
                     //btn_next_mail.layout(R.drawable.button_colorchange2)
                     //btn_next_mail.setBackgroundColor(R.drawable.button_colorchange2)
-
 
                 }
             }
@@ -54,7 +56,7 @@ class SignupemailActivity : AppCompatActivity() {
                     //btn_next_mail.layout(R.drawable.button_colorchange2)
                     //btn_next_mail.setBackgroundColor(R.drawable.button_colorchange2)
                 }
-                }
+            }
         })
         btn_next_mail.setOnClickListener {
             val intentToPassword = Intent(this, SignuppasswordActivity::class.java)
