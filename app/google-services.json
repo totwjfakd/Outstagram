@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "258259543531",
-    "firebase_url": "https://outstagram-c0078.firebaseio.com",
-    "project_id": "outstagram-c0078",
-    "storage_bucket": "outstagram-c0078.appspot.com"
+    "project_number": "138574627620",
+    "firebase_url": "https://outstagram-82329.firebaseio.com",
+    "project_id": "outstagram-82329",
+    "storage_bucket": "outstagram-82329.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:258259543531:android:f478a931a523809eb8e5ae",
+        "mobilesdk_app_id": "1:138574627620:android:085d515fe532fab5cb29b1",
         "android_client_info": {
           "package_name": "com.example.outstagram2"
         }
       },
       "oauth_client": [
         {
-          "client_id": "258259543531-r7p6lbjnbkqdol079vqh75al0cfou4kd.apps.googleusercontent.com",
+          "client_id": "138574627620-i07qo6lathutcua2s867mf335h3oo0hg.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.outstagram2",
@@ -23,20 +23,20 @@
           }
         },
         {
-          "client_id": "258259543531-918un04voshkgg1tk89eo33jhrl5gr69.apps.googleusercontent.com",
+          "client_id": "138574627620-4q1skk7j75be0odrus6142o34813bmr6.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB144u-4fKyDLURIwbI9z9c1HZ6fi-Lx2c"
+          "current_key": "AIzaSyA2Vc8UVNprLS9077xjyUjLxBpcgrSRJI4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "258259543531-918un04voshkgg1tk89eo33jhrl5gr69.apps.googleusercontent.com",
+              "client_id": "138574627620-4q1skk7j75be0odrus6142o34813bmr6.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
