@@ -1,15 +1,18 @@
 package com.example.outstagram2
 
+import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import com.example.outstagram2.navigation.AlarmFragment
-import com.example.outstagram2.navigation.DetailViewFragment
-import com.example.outstagram2.navigation.GridFragment
-import com.example.outstagram2.navigation.UserFragment
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
+import com.example.outstagram2.navigation.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
+
+
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,6 +37,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         }
 
          */
+        ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE), 1) // 사진 권한 요청
     }
 
     // Main 화면 fragment 출력 함수
@@ -52,6 +56,11 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             }
 
             R.id.action_add_photo -> {
+                if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) { // 권한이 있는지 확인
+                    startActivity(Intent(this, AddPhotoActivity::class.java))
+                }
+
+                return true
             }
 
             R.id.action_favorite_alarm -> {
